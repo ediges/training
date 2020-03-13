@@ -1,4 +1,3 @@
-from classes.Decorators import *
 import logging
 
 logger = logging.getLogger()
@@ -23,6 +22,7 @@ logger = logging.getLogger()
 # @is_active(token='eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdXRvYWRtaW4iLCJBdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImV4cCI6MTU3MjM2MzI4MywiaWF0IjoxNTcyMzYyNjgzfQ.ymkT6BgI_yjqvx2bo24etd19t1AvhmrXgHWbCJvtu3aBrjNco1k4ut_74RNiuUCmXw7IPZ7ez-WsGjOK4qZ-1Q')
 # @is_active(token=t)
 def test_token_3(get_eco_admin_access_token):
+    print('stash1')
     logger.info('Running test... with token: ' + get_eco_admin_access_token)
     assert 0
 
